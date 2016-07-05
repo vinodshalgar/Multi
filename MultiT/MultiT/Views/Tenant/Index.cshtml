@@ -1,0 +1,18 @@
+﻿@model List<MultiT.Models.Tenant>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div>
+    <ul>
+        @foreach(var a in @Model)
+        {
+            <li>@a.Name</li>
+            <li>....@a.DomainName</li>
+        }
+    </ul>
+</div>
+
